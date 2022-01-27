@@ -1,7 +1,7 @@
 # Site settings
 title: Home
 email: info@idevelopers.in
-description: We are a team of software developers
+description: You Ask We Deliver
 baseurl:  # the subpath of your site, e.g. /blog/
 url:  # the base hostname & protocol for your site
 twitter_username: twitter_username
