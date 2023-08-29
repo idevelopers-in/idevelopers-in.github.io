@@ -1,6 +1,6 @@
 ---
 title: "UI/UX Development"
-date: 2019-03-28T15:14:54+10:00
+date: 2023-08-29T07:14:42+05:30
 weight: 5
 ---
 
