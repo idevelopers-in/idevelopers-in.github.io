@@ -1,28 +1,51 @@
-# Site settings
-title: Home
-email: info@idevelopers.in
-description: You Ask We Deliver
-baseurl:  # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
-twitter_username: twitter_username
-github_username:  idevelopers-in
+baseurl: '/'
+permalink: pretty
+title: 'iDevelopers'
 
-# Build settings
-markdown: kramdown
+logo:
+  mobile: "images/logo/logo.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "60px"
+  desktop_width: "60px"
 
-highlighter: rouge
-
-# Pagination
-paginate: 15
-paginate_path: "/blog/page:num/"
-
+home: 
+  limit_services: 6
 
 collections:
-  portfolio:
+  services:
     output: true
-    permalink: /portfolio/:path/
-  poetry:
+    sort_by: weight
+  team:
     output: true
-    permalink: /poetry/:path/
 
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
 
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
