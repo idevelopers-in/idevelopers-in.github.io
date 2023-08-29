@@ -1,6 +1,6 @@
 ---
 title: "Frontend Web Development"
-date: 2018-12-28T15:14:39+10:00
+date: 2023-08-29T07:14:39+05:30
 weight: 2
 ---
 
